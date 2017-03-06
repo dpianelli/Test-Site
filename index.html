@@ -7,11 +7,16 @@
     <meta name="description" content="">
     <meta name="author" content="Dominique Pianelli <dominique.d.pianelli@gmail.com>">
       <title>Simple Sidebar - Start Bootstrap Template</title>
-<!-- Bootstrap Core CSS -->
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script>
+    document.write('<base href="' + document.location + '" />');
+  </script>
+  <!-- Bootstrap Core CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css" rel="stylesheet" integrity="sha384-awusxf8AUojygHf2+joICySzB780jVvQaVCAt1clU3QsyAitLGul28Qxb2r1e5g+" crossorigin="anonymous">  
-  <!-- Custom CSS -->
-    <link href="simple-sidebar.css" rel="stylesheet">
+   <link data-require="toastr@*" data-semver="2.1.2" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.2/toastr.min.css" />
+  <link href="loading-bar.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+   <link href="simple-sidebar.css" rel="stylesheet">
   <!-- Font Awesome -->
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   
@@ -85,5 +90,38 @@
         $("#wrapper").toggleClass("toggled");
     });
     </script>
+    <!--Libraries-->
+  <script data-require="toastr@*" data-semver="2.1.2" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.2/toastr.min.js"></script>
+  <script data-require="bootstrap@3.3.5" data-semver="3.3.5" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <!--Angular-->
+  <script data-require="angular.js@1.4.8" data-semver="1.5.7" src="https://code.angularjs.org/1.5.7/angular.js"></script>
+  <script data-require="ui-router@*" data-semver="1.0.0-alpha.5" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.0-alpha.5/angular-ui-router.js"></script>
+  <script data-require="ui-bootstrap@*" data-semver="1.3.3" src="https://cdn.rawgit.com/angular-ui/bootstrap/gh-pages/ui-bootstrap-tpls-1.3.3.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.js"></script>
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angularFire/2.2.0/angularfire.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular-md5/0.1.10/angular-md5.min.js'>
+  </script>
+  <!-- Post Load Angular Libraries -->
+  <script src="loading-bar.js"></script>
+
+  <!--App-->
+  <script src="app.js"></script>
+  <script src="notifier.js"></script>
+
+  <script src="home.controller.js"></script>
+  <script src="auth/auth.controller.js"></script>
+  <script src="auth/auth.service.js"></script>
+  <script src="users/users.service.js"></script>
+  <script src="users/profile.controller.js"></script>
+  
+  <script src="channels/messages.controller.js"></script>
+  <script src="channels/messages.service.js"></script>
+  <script src="channels/channels.controller.js"></script>
+  <script src="channels/channels.service.js"></script>
+  <script src="dataService.js"></script>
   </body>
 </html>
